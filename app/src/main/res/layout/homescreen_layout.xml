@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_background"
+    >
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="Dating"
+        android:background="@drawable/button_background"
+        android:id="@+id/dating_btn"
+        android:textAllCaps="false"
+        android:onClick="goDating"
+        android:textSize="20sp"
+
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Workout"
+        android:id="@+id/workout_btn"
+        android:layout_below="@id/dating_btn"
+        android:background="@drawable/button_background"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="goWorkout"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:text="Academics"
+        android:onClick="goAcademics"
+        android:id="@+id/academics_btn"
+        android:layout_below="@id/workout_btn"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:text="Update Your Info"
+        android:id="@+id/update_info_btn"
+        android:onClick="goUpdateInfo"
+        android:layout_below="@id/academics_btn"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+  />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:text="Log Out"
+        android:id="@+id/logout_btn"
+        android:layout_below="@id/update_info_btn"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="logout"
+        />
+
+</LinearLayout>

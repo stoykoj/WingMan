@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dating"
+        android:id="@+id/dating_header"
+        android:textSize="30sp"
+        android:color="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Interests"
+        android:id="@+id/interests"
+        android:layout_below="@id/dating_header"
+        android:color="#CCCCCC"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Type"
+        android:id="@+id/type"
+        android:layout_below="@id/interests"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Preference"
+        android:id="@+id/preference"
+        android:layout_below="@id/type"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/preference"
+        android:onClick="dateSubmit"
+        android:background="@drawable/button_background"
+        />
+
+</LinearLayout>

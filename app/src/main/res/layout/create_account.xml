@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_background">
+
+
+    <TextView
+        android:id="@+id/caText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Enter your email:"
+        android:textSize="22dp"
+        android:layout_marginTop="26.8dp"
+        />
+    <TextView
+        android:id="@+id/caText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Enter a username:"
+        android:textSize="22dp"
+        android:layout_below="@id/caText1"
+        android:layout_marginTop="26.8dp"
+        />
+    <TextView
+        android:id="@+id/caText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Enter a password:"
+        android:textSize="22dp"
+        android:layout_below="@id/caText2"
+        android:layout_marginTop="26.8dp"
+        />
+    <TextView
+        android:id="@+id/caText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Confirm password: "
+        android:textSize="22dp"
+        android:layout_below="@id/caText3"
+        android:layout_marginTop="26.8dp"
+        />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/caText1"
+        android:layout_alignParentRight="true"
+        android:hint="enter email"
+        android:id="@+id/emailIn"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/caText2"
+        android:layout_alignParentRight="true"
+        android:hint="enter username"
+        android:id="@+id/usernameIn"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/caText3"
+        android:layout_alignParentRight="true"
+        android:inputType="textPassword"
+        android:hint="enter password"
+        android:fontFamily="@string/app_name"
+        android:id="@+id/passwordIn"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/caText4"
+        android:layout_alignParentRight="true"
+        android:inputType="textPassword"
+        android:hint="confirm password"
+        android:id="@+id/confirmPassIn"
+        android:fontFamily="@string/app_name"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/caText4"
+
+        android:background="@drawable/button_background"
+        android:text="Create Account"
+        android:textSize="30dp"
+        android:onClick="confirmCreate"
+        android:id="@+id/confirmCreate_btn"
+        android:layout_margin="30dp"
+        android:textAllCaps="false"
+
+        />
+</RelativeLayout>

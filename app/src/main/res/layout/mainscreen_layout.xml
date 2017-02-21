@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativelayout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MainScreen"
+        android:id="@+id/main_header"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_header"
+        android:id="@+id/addTabBtn"
+        android:text="Add a Tab"
+        android:onClick="goAddTab"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Database"
+        android:onClick="goDatabase"
+        android:layout_toRightOf="@id/addTabBtn"
+        android:layout_alignBaseline="@id/addTabBtn"
+        android:id="@+id/database_btn"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/log_out"
+        android:layout_toRightOf="@id/database_btn"
+        android:layout_alignBaseline="@id/database_btn"
+        android:onClick="goLogout"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/debts_header"
+        android:text="Debts"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/database_btn"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@id/debts_header"
+        >
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

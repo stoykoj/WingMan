@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Tab"
+        android:id="@+id/addtab_header"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter other person's username..."
+        android:layout_below="@id/addtab_header"
+        android:id="@+id/other_user_input"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_alignBottom="@+id/other_user_input"
+        android:layout_toRightOf="@+id/other_user_input"
+        android:layout_toEndOf="@+id/other_user_input"
+        android:onClick="confirmBtn"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/debtor_spinner"
+        android:layout_below="@id/other_user_input"
+        ></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="owe(s)"
+        android:layout_toRightOf="@id/debtor_spinner"
+        android:layout_below="@id/other_user_input"
+        android:id="@+id/owes"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/debtee_spinner"
+        android:layout_below="@id/other_user_input"
+        android:layout_toRightOf="@id/owes"
+        ></Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dollar_sign"
+        android:text="$"
+        android:textSize="20sp"
+        android:layout_below="@+id/debtor_spinner"
+        android:layout_toLeftOf="@+id/dollar_amt"
+        android:layout_toStartOf="@+id/dollar_amt" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dollar_amt"
+        android:inputType="numberDecimal"
+        android:hint="amount"
+        android:layout_alignBaseline="@+id/dollar_sign"
+        android:layout_alignBottom="@+id/dollar_sign"
+        android:layout_toLeftOf="@+id/cancel_tab"
+        android:layout_toStartOf="@+id/cancel_tab" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_tab"
+        android:text="Confirm"
+        android:layout_below="@id/dollar_amt"
+        android:onClick="confirmTab"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_tab"
+        android:layout_below="@id/dollar_amt"
+        android:layout_toRightOf="@id/confirm_tab"
+        android:text="Cancel"
+        android:onClick="cancelTab"
+        />
+
+
+
+</RelativeLayout>

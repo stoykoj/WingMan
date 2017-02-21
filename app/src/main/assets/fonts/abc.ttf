@@ -1,0 +1,6 @@
+AssetManager am = context.getApplicationContext().getAssets();
+
+    typeface = Typeface.createFromAsset(am,
+            String.format(Locale.US, "fonts/%s", "abc.ttf"));
+
+    setTypeface(typeface);
